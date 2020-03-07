@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dtd & xsd tags to validate tags and to store file and manage use xsd -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- read and create object inside the ApplicationContext -->
+	<bean id="ankit"
+		class="com.bridgelabz.dependencyConstructor.Student">
+		<constructor-arg name="id" value="2" />
+		<constructor-arg name="studentName"
+			value="Ankit Rajput" />
+	</bean>
+	<bean id="kunal"
+		class="com.bridgelabz.dependencyConstructor.Student">
+		<constructor-arg name="id" value="5" />
+		<constructor-arg name="studentName"
+			value="Kunal Parate" />
+	</bean>
+	<bean id="vishal"
+		class="com.bridgelabz.dependencyConstructor.Student">
+		<constructor-arg name="id" value="6" />
+		<constructor-arg name="studentName"
+			value="Vishal Patil" />
+	</bean>
+</beans>
