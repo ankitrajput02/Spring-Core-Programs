@@ -8,20 +8,20 @@
 	<!-- read and create object inside the ApplicationContext -->
 	<bean id="ankit"
 		class="com.bridgelabz.dependencyConstructor.Student">
-		<constructor-arg name="id" value="2" />
+		<constructor-arg name="id" value="2" type="int"/>
 		<constructor-arg name="studentName"
-			value="Ankit Rajput" />
+			value="Ankit Rajput" type="String"/>
 	</bean>
 	<bean id="kunal"
 		class="com.bridgelabz.dependencyConstructor.Student">
-		<constructor-arg name="id" value="5" />
+		<constructor-arg name="id" value="5" type="int"/>
 		<constructor-arg name="studentName"
-			value="Kunal Parate" />
+			value="Kunal Parate" type="String"/>
 	</bean>
 	<bean id="vishal"
 		class="com.bridgelabz.dependencyConstructor.Student">
-		<constructor-arg name="id" value="6" />
+		<constructor-arg name="id" value="6" type="int"/>
 		<constructor-arg name="studentName"
-			value="Vishal Patil" />
+			value="Vishal Patil" type="String"/>
 	</bean>
 </beans>
