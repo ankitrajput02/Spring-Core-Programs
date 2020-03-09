@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD & XSD tags to validate tags and to store file and manage use xsd -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- read and create object inside the ApplicationContext -->
+	<bean id="libraryObject"
+		class="com.bridgelabz.injectObject.Library" />
+
+	<bean id="student" class="com.bridgelabz.injectObject.Student">
+		<property name="id" value="123" />
+		<!-- ref is use to referring object of Library Class -->
+		<property name="library" ref="libraryObject" />
+	</bean>
+	<bean id="anotherStudent"
+		class="com.bridgelabz.injectObject.AnotherStudent">
+		<property name="id" value="111" />
+		<property name="libraryAnother" ref="libraryObject"/>
+	</bean>
+
+</beans>
