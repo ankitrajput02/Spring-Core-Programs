@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD & XSD tags to validate tags and to store file and manage use xsd -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- read and create object inside the ApplicationContext -->
+	<bean id="mathBook"
+		class="com.bridgelabz.loosecoupling.MathBook" />
+	<bean id="scienceBook" class="com.bridgelabz.loosecoupling.ScienceBook"/>
+	<bean id="student" class="com.bridgelabz.loosecoupling.Student">
+		<property name="book" ref="mathBook" />
+	</bean>		
+
+</beans>

@@ -1,6 +1,7 @@
 package com.bridgelabz.dependencyConstructor;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -25,6 +26,7 @@ public class SpringDependencyUsingConstructorApplication {
 		kunal.displayStudentInfo();
 		Student vishal = context.getBean("vishal", Student.class);
 		vishal.displayStudentInfo();
+		((AbstractApplicationContext) context).close();
 		
 
 	}
