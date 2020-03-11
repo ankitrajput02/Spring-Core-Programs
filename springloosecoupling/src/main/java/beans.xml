@@ -10,7 +10,7 @@
 		class="com.bridgelabz.loosecoupling.MathBook" />
 	<bean id="scienceBook" class="com.bridgelabz.loosecoupling.ScienceBook"/>
 	<bean id="student" class="com.bridgelabz.loosecoupling.Student">
-		<property name="book" ref="mathBook" />
+		<property name="book" ref="scienceBook" />
 	</bean>		
 
 </beans>
